@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
     int contador = 0;
     //trecho do codigo que executa repetidas vezes operações de entra e saida
     while(i >= 0){
-        print("digite uma idade:");
+        printf("digite uma idade:");
         scanf("%d ",&i);//le do arquivo os dados de entrada
         printf("\n");
         if(i >= 0 && i <= 18){
