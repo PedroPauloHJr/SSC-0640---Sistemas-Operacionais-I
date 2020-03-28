@@ -9,14 +9,15 @@
 int main(int argc, char const *argv[])
 {
     //descrição do software
-    printf("Senso de jovens, contaremos o numero de pessoas com idade entre 0 e 18 anos de um grupo pessoas \n");
+    printf("Senso de jovens, contaremos o numero de pessoas com idade entre 0 e 18 anos de um grupo pessoas Digite -1 terminar sair\n");
     //declaração de variaveis
     int i = 0;
     int contador = 0;
-    FILE *file = fopen("in.txt","r");//arquivo que contem os dados das pessoas
     //trecho do codigo que executa repetidas vezes operações de entra e saida
-    while(!feof(file)){
-        fscanf(file,"%d ",&i);//le do arquivo os dados de entrada
+    while(i >= 0){
+        print("digite uma idade:");
+        scanf("%d ",&i);//le do arquivo os dados de entrada
+        print("\n");
         if(i >= 0 && i <= 18){
             contador++;//operação simples so cpu de realizar um incremento para realizar uma contagem
         }
