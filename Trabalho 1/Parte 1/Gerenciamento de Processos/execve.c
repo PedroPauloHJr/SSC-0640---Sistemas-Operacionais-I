@@ -14,5 +14,5 @@ int main(void) {
   char* envp[] = { "", "environment", NULL };//o ambiente que vamos utilizar
   execve("./main", argv, envp);//cria o novo processo com o programa
   perror("Erro ao usar o execve");//nao sera executado caso o execve ocorra com sucesso
-  return 1;
+  return 0;
 }
