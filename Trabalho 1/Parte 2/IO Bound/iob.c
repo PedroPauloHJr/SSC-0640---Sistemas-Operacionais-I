@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
     while(i >= 0){
         print("digite uma idade:");
         scanf("%d ",&i);//le do arquivo os dados de entrada
-        print("\n");
+        printf("\n");
         if(i >= 0 && i <= 18){
             contador++;//operação simples so cpu de realizar um incremento para realizar uma contagem
         }
