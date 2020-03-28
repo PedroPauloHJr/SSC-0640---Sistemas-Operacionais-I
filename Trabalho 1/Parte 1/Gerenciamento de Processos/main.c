@@ -15,7 +15,6 @@ int main(int argc, char const *argv[])
     fork();//cria o novo processo
     int id = getpid();//recebe o id do processo
     int ide = getgid();//recebe o id do grupo de processos
-    return 0;
     printf("O id do precesso é: %d , e o id do grupo de processo é %d \n",id,ide);//printa os dados obtidos
-    return 0;
+    exit(EXIT_SUCCESS);
 }
