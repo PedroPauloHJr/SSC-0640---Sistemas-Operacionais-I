@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
     int id = getpid();//recebe o id do processo
     int ide = getgid();//recebe o id do grupo de processos
     //printa os dados obtidos
-    printf("aaaaa");
+    printf("O id do processo é: %d. O id do grupo de processos é: %d \n",id,ide);
     wait(NULL);
     return 0;
         
