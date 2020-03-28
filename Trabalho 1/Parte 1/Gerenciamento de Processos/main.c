@@ -17,6 +17,7 @@ int main(int argc, char const *argv[])
     int ide = getgid();//recebe o id do grupo de processos
     //printa os dados obtidos
     printf("aaaaa");
+    wait(NULL);
     return 0;
         
 }
