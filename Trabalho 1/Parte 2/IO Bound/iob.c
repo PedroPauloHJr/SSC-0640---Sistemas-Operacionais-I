@@ -9,14 +9,14 @@
 int main(int argc, char const *argv[])
 {
     //descrição do software
-    printf("Senso de jovens, contaremos o numero de pessoas com idade entre 0 e 18 anos de um grupo pessoas Digite -1 terminar sair\n");
+    printf("Senso de jovens, contaremos o numero de pessoas com idade entre 0 e 18 anos de um grupo pessoas. Digite -1 terminar\n");
     //declaração de variaveis
     int i = 0;
     int contador = 0;
     //trecho do codigo que executa repetidas vezes operações de entra e saida
     while(i >= 0){
         printf("digite uma idade:");
-        scanf("%d ",&i);//le do arquivo os dados de entrada
+        scanf("%d",&i);//le do arquivo os dados de entrada
         printf("\n");
         if(i >= 0 && i <= 18){
             contador++;//operação simples so cpu de realizar um incremento para realizar uma contagem
