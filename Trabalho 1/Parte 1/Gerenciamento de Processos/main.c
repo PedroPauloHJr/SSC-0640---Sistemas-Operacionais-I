@@ -1,6 +1,6 @@
-// O consagrado                                       nUSP:
 // George Alexandre Gantus                            nUSP: 10691988
 // Pedro Paulo Herzog Junior                          nUSP: 10284692
+// Vinícius Molina Garcia                             nUSP:  8929296
 
 //Neste codigo faremos o uso das system calls getpid,getgid e fork todas relacionadas a gerenciamento de processos
 //getpid retorna o id do processo - getpid(void)
