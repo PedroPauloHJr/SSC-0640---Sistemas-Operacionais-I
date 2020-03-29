@@ -1,6 +1,6 @@
-// O consagrado                                       nUSP:
 // George Alexandre Gantus                            nUSP: 10691988
 // Pedro Paulo Herzog Junior                          nUSP: 10284692
+// Vinícius Molina Garcia                             nUSP:  8929296
 
 //Neste codigo apresentamos um exemplo de aplicação de IO-bound neste caso programas que fazem contagens para sensos de dados que são
 //bastante utilizados em instituições como IBGE e etc que estão interessadas em obter informações de um grande volume de dados
