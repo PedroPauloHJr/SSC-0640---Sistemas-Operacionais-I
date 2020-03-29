@@ -1,4 +1,4 @@
-strace -c ./trab1
+ strace -c ./prog
 Programa executado com sucesso.
 % time     seconds  usecs/call     calls    errors syscall
 ------ ----------- ----------- --------- --------- ----------------
@@ -16,3 +16,4 @@ Programa executado com sucesso.
   0.00    0.000000           0         3           openat
 ------ ----------- ----------- --------- --------- ----------------
 100.00    0.000000                    27         3 total
+
