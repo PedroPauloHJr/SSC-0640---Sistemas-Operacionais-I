@@ -1,7 +1,7 @@
 Para compilar o programa, temos:
 	gcc iob.c -o iob
 Para executar o programa, temos:
-	./prog
+	./iob
 O arquivo "time.txt" contém as estatísticas de uso de recursos em cada um dos programas desenvolvidos,
 o tempo total de execução (em segundos), tempo gasto em modo usuário, tempo gasto em modo kernel, trocas 
 de contexto voluntárias e trocas de contexto involuntárias.
