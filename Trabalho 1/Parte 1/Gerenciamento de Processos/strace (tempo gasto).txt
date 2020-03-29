@@ -1,0 +1,49 @@
+ strace -c ./execve
+Programa que chama a main
+O id do processo é: 3174. O id do grupo de processos é: 1000 
+O id do processo é: 3173. O id do grupo de processos é: 1000 
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+  0.00    0.000000           0         2           read
+  0.00    0.000000           0         2           write
+  0.00    0.000000           0         4           close
+  0.00    0.000000           0         6           fstat
+  0.00    0.000000           0        10           mmap
+  0.00    0.000000           0         8           mprotect
+  0.00    0.000000           0         2           munmap
+  0.00    0.000000           0         6           brk
+  0.00    0.000000           0         6         6 access
+  0.00    0.000000           0         1           getpid
+  0.00    0.000000           0         1           clone
+  0.00    0.000000           0         2           execve
+  0.00    0.000000           0         1           wait4
+  0.00    0.000000           0         1           getgid
+  0.00    0.000000           0         2           arch_prctl
+  0.00    0.000000           0         4           openat
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000000                    58         6 total
+
+ strace -c ./main
+O id do processo é: 2948. O id do grupo de processos é: 1000 
+O id do processo é: 2947. O id do grupo de processos é: 1000 
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 29.67    0.000173          43         4           mprotect
+ 25.90    0.000151         151         1           clone
+ 19.73    0.000115          38         3           brk
+  9.61    0.000056          56         1           munmap
+  4.80    0.000028          28         1           write
+  4.80    0.000028           9         3           fstat
+  3.43    0.000020          20         1           wait4
+  1.03    0.000006           6         1           getpid
+  1.03    0.000006           6         1           getgid
+  0.00    0.000000           0         1           read
+  0.00    0.000000           0         2           close
+  0.00    0.000000           0         5           mmap
+  0.00    0.000000           0         3         3 access
+  0.00    0.000000           0         1           execve
+  0.00    0.000000           0         1           arch_prctl
+  0.00    0.000000           0         2           openat
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000583                    31         3 total
+
