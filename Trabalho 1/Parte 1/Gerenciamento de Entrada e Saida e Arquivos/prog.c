@@ -1,6 +1,6 @@
-// O consagrado                                       nUSP:
 // George Alexandre Gantus                            nUSP: 10691988
 // Pedro Paulo Herzog Junior                          nUSP: 10284692
+// Vinícius Molina Garcia                             nUSP:  8929296
 
 // Neste programa, veremos o uso de 3 primitivas de chamadas de sistema da categoria
 // de gerenciamento de E/S e arquivos: open, write e close.
