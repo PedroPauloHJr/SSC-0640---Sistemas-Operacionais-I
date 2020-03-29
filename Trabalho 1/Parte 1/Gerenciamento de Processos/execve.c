@@ -1,6 +1,6 @@
-// O consagrado                                       nUSP:
 // George Alexandre Gantus                            nUSP: 10691988
 // Pedro Paulo Herzog Junior                          nUSP: 10284692
+// Vinícius Molina Garcia                             nUSP:  8929296
 
 
 //Neste programa vamos usar a chamada de sistema execve da categoria gerenciamento de processos
