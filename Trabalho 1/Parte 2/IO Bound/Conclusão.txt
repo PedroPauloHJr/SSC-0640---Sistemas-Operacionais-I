@@ -1,0 +1,2 @@
+Baseado nos dados do documento "time", podemos concluir que o "prog" trata-se de um programa
+CPU bound, já que utilizou cerca de 99% da CPU e levou mais de 4 segundos para ser executado completamente.
