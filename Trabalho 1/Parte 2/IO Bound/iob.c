@@ -24,5 +24,6 @@ int main(int argc, char const *argv[])
     }
     //resultado;
     printf("\nNumero de jovens com idade entre 0 e 18 anos: %d \n",contador);
+    fclose(file);
     return 0;
 }
