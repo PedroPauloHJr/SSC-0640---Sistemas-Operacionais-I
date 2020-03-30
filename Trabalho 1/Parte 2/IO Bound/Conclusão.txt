@@ -1,2 +1,3 @@
-Baseado nos dados do documento "time", podemos concluir que o "prog" trata-se de um programa
-CPU bound, já que utilizou cerca de 99% da CPU e levou mais de 4 segundos para ser executado completamente.
+Baseado nos dados do documento "time", podemos concluir que o programa é um programa do tipo IO-bound já que a maior parte
+do tempo de execução é realizando entrada e saida e de dados. Isso fica evidente quande quando vemos os dados de tempo com a 
+ferramenta time fornecida pelo professor
