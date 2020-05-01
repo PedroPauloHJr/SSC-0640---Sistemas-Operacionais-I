@@ -4,9 +4,9 @@ a biblioteca semaphore.h e a pthreads.h, enquanto o pthread.c foi desenvolvido
 com a pthreads.h apenas (além das bibliotecas padrão).
 
 Para compilar o programa, temos:
-	gcc pthread.c -lptread -o pthread
+	gcc pthread.c -lpthread -o pthread
                 ou
-  	gcc semphore.c -lptread -o semaphore
+  	gcc semphore.c -lpthread -o semaphore
 Para executar o programa, temos:
 	./pthread
   	./semaphore
