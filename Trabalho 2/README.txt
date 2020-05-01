@@ -6,7 +6,7 @@ com a pthreads.h apenas (além das bibliotecas padrão).
 Para compilar o programa, temos:
 	gcc pthread.c -lptread -o pthread
                 ou
-  gcc semphore.c -lptread -o semaphore
+  	gcc semphore.c -lptread -o semaphore
 Para executar o programa, temos:
 	./pthread
-  ./semaphore
+  	./semaphore
