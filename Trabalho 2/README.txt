@@ -1,12 +1,12 @@
 Aqui encontraremos o trabalho 2 realizado na disciplina. Nesta resolução,
 podemos notar dois arquivos .c. Isso porque, o semphore.c foi desenvolvido utilizando
 a biblioteca semaphore.h e a pthreads.h, enquanto o pthread.c foi desenvolvido
-com a pthreads.h apenas (além das bibliotecas padrão).
+com a pthreads.h apenas (além das bibliotecas padrão). Ambos, 
 
 Para compilar o programa, temos:
 	gcc pthread.c -lpthread -o pthread
                 ou
-  	gcc semphore.c -lpthread -o semaphore
+  	gcc semaphore.c -lpthread -o semaphore
 Para executar o programa, temos:
 	./pthread
   	./semaphore
