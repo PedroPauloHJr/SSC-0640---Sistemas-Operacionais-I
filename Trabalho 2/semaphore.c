@@ -1,3 +1,6 @@
+// George Alexandre Gantus                            nUSP: 10691988
+// Pedro Paulo Herzog Junior                          nUSP: 10284692
+// Vinícius Molina Garcia                             nUSP:  8929296
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,7 +15,7 @@ int buffer[TAM_FILA];
 //Declaração dos semaforos
 sem_t mutex;
 sem_t vazio;
-sem_t ocupado; 
+sem_t ocupado;
 //Funcao que sera executada pela thread consumidor
 void *consumidor(){
     for(int i = 0;i < PREENCHIMENTO;i++){
