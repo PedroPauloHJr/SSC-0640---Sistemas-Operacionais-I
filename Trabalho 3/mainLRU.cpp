@@ -1,3 +1,6 @@
+// George Alexandre Gantus                            nUSP: 10691988
+// Pedro Paulo Herzog Junior                          nUSP: 10284692
+// Vinícius Molina Garcia                             nUSP:  8929296
 #include <iostream> 
 #include <fstream> 
 #include <math.h>
@@ -203,9 +206,12 @@ void swapNode(No *n){//Substitui um no por outro
     No *aux = mainMemory;
     No *less = mainMemory;
     int flag = 9999999;//Numero absurdamente grande
+    cout << "************************PROCURANDO PAGINA A SER REMOVIDA*****************************\n";
     while(aux != NULL){
+        cout << aux->getPagina()->counter << "\n";
         if(aux->getPagina()->counter <= flag){
             less = aux;
+            flag = aux->getPagina()->counter;
         }
         aux = aux->getProx();
     }

@@ -1,3 +1,6 @@
+// George Alexandre Gantus                            nUSP: 10691988
+// Pedro Paulo Herzog Junior                          nUSP: 10284692
+// Vinícius Molina Garcia                             nUSP:  8929296
 #include <iostream> 
 #include <fstream> 
 #include <math.h>
@@ -293,7 +296,6 @@ int read(vector<Process> *pro,char a,string pid,string op){//interpreta os dados
 }
 
 int main(void){
-
     for (int i = 0; i < NUMERODEPAGINAS; i++){
         bitMap[i] = 0;//inicializa o bitMap com zeros
     }
