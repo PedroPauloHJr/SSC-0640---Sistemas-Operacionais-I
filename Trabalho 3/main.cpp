@@ -161,7 +161,15 @@ vector<Page*> createPageTable(int s){//Cria a tabela de página de um processo r
     }
     return r;
 }
-
+void printPageTable(vector<Page *> table){//Printa a tabela de páginas de um processo
+    cout << "***********************TABELA DE PAGINA ************************************\n";
+    for (int i = 0; i < table.size(); i++)
+    {
+        cout << "Modificada: " << table[i]->getM() << "|Presente: " <<table[i]->getP()<< "|Referenciada: " << table[i]->getR()<< "|Indice Quadro: " << table[i]->getQuadro() << "\n";
+    }
+    cout << "***********************FIM ************************************\n";
+    
+}
 void insertNode(No *n){//Insere um no nosso relogio, quando ainda há espaço disponivel
 
     usedMemory += TAMANHODAPAGINA;
@@ -229,6 +237,7 @@ int read(vector<Process> *pro,char a,string pid,string op){//interpreta os dados
         processes.push_back(processAux);
         *pro = processes;
         cout << "O processo " << pid << " foi criado, e tem " << op << " paginas\n";
+        printPageTable(processAux.table);
         //Basicamente a criação do processo está feita
     }else{
         cout << "LEITURA OU ESCRITA \n";
@@ -264,7 +273,7 @@ int read(vector<Process> *pro,char a,string pid,string op){//interpreta os dados
                 clockChange(novo);
                 //algoritmo de substituição de paginas
             }
-            
+            printPageTable(processAux.table);
         }else{//Caso em que a página já esta na ram
             if(logicToFisic(op,processAux.table) == "FORA DO PROCESSO"){
                 cout << "TENTATIVA DE ACESSO A AREA EXTERNA AO PROCESSO NEGADA";
@@ -277,7 +286,7 @@ int read(vector<Process> *pro,char a,string pid,string op){//interpreta os dados
                 processAux.table[getIndex(op)]->setM(true);//marca a página como modificada
                 cout << "PAGINA FOI MARCADA COMO MODIFICADA\n";
             }
-            
+            printPageTable(processAux.table);
         }
         
     }
